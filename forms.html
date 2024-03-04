@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>New Student Registration Form</h2>
+    <form action="/register" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" mandatory><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" placeholder="Enter your date of birth" mandatory><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" mandatory>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" placeholder="Enter your address" mandatory></textarea><br><br>
+
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone"placeholder="Enter your telephone number"  mandatory><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" mandatory><br><br>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" placeholder="Enter your course name" mandatory><br><br>
+
+        <button type="submit">Register</button>
+        <button type="button" onclick="window.location.href='/cancel'">Cancel</button>
+    </form>
+</body>
+</html>
